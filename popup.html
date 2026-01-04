@@ -1,27 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8">
   <link rel="stylesheet" href="popup.css">
 </head>
 <body>
-  <h3>Focus Mode</h3>
+  <div class="glass-card">
+    <header>
+      <div class="logo-area">
+        <span class="pulse-icon"></span>
+        <h3>Odak Modu</h3>
+      </div>
+      <div id="dailyFocus" class="stat-badge">Bugün: 0 dk</div>
+    </header>
 
-  <input id="siteInput" placeholder="example.com" />
-  <button id="addSite">Add Site</button>
+    <div class="input-container">
+      <input id="siteInput" placeholder="Site adresi (örn: x.com)" />
+      <button id="addSite">+</button>
+    </div>
 
-  <ul id="siteList"></ul>
-<h4>Popular sites</h4>
-<div id="popularSites" style="display:flex; gap:6px; flex-wrap:wrap;"></div>
+    <div class="quick-add">
+      <label>Hızlı Engelle:</label>
+      <div id="popularSites"></div>
+    </div>
 
-  <label>Focus Time (minutes)</label>
-  <input id="timeInput" type="number" value="25" min="1" />
+    <div class="divider"></div>
 
-  <button id="startFocus">Start Focus</button>
-<button id="stopFocus">Stop Focus</button>
+    <div class="timer-box">
+      <h1 id="timer">Başlamadı</h1>
+      <p class="label">KALAN SÜRE</p>
+      
+      <div class="settings">
+        <input id="timeInput" type="number" value="25" min="1" />
+        <span>DAKİKA</span>
+      </div>
 
-  <p id="timer">Not started</p>
-<p id="dailyFocus">Today: 0 min</p>
+      <div class="actions">
+        <button id="startFocus" class="glow-btn start">BAŞLAT</button>
+        <button id="stopFocus" class="glow-btn stop">DURDUR</button>
+      </div>
+    </div>
 
+    <div class="list-container">
+      <ul id="siteList" class="custom-list"></ul>
+    </div>
+  </div>
   <script src="popup.js"></script>
 </body>
 </html>

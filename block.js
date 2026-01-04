@@ -15,19 +15,18 @@ stopBtn.onclick = () => {
 
 setInterval(() => {
   chrome.storage.local.get({ focusEndTime: null }, (data) => {
-    if (!data.focusEndTime) {
-      countdownEl.textContent = "Focus stopped";
+    
+    if (!data.focusEndTime || data.focusEndTime - Date.now() <= 0) {
+      if (site) {
+       
+        window.location.href = "https://" + site;
+      } else {
+        countdownEl.textContent = "Focus finished. You can close this tab.";
+      }
       return;
     }
 
     const remaining = data.focusEndTime - Date.now();
-
-    if (remaining <= 0) {
-      chrome.storage.local.set({ focusEndTime: null });
-      countdownEl.textContent = "Focus finished";
-      return;
-    }
-
     const min = Math.floor(remaining / 60000);
     const sec = Math.floor((remaining % 60000) / 1000);
     countdownEl.textContent = `${min}:${sec.toString().padStart(2, "0")}`;

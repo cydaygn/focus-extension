@@ -3,7 +3,7 @@
   "name": "Focus Mode Blocker",
   "description": "Blocks distracting websites during focus sessions",
   "version": "1.0",
-  "permissions": ["storage", "tabs", "notifications", "alarms"],
+  "permissions": ["storage", "tabs", "notifications", "alarms", "contextMenus"],
   "host_permissions": ["<all_urls>"],
   "background": {
     "service_worker": "background.js"

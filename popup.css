@@ -1,68 +1,102 @@
+:root {
+  --bg: #0b0f1a;
+  --accent: #188d85; /* Senin turkuazın */
+  --accent-soft: rgba(24, 141, 133, 0.25);
+  --danger: #ff4757;
+  --card-bg: #2e162b;
+  --border: #7090c6;
+}
+
+/* Sayfanın kendisinde scroll çıkmasını engelle */
 body {
-  width: 300px;
-  font-family: system-ui, sans-serif;
+  width: 350px;
+  background: var(--bg);
+  color: #e2e8f0;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
   padding: 10px;
-  background: #f9f9f9;
+  overflow: hidden; 
 }
 
-h3 {
-  text-align: center;
-  margin-bottom: 10px;
+.glass-card {
+  background: linear-gradient(145deg, #188d85, #0b0f1a);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  max-height: 580px; /* Eklentinin boyunu burada sınırladık */
 }
 
-h4 {
-  margin-top: 15px;
-  margin-bottom: 6px;
+header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; }
+.logo-area h3 { margin: 0; font-size: 18px; color: #fff; }
+
+.stat-badge {
+  background: var(--accent-soft);
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 10px;
+  font-size: 11px;
+  border: 1px solid var(--accent);
 }
 
-input[type="text"],
-input[type="number"] {
-  width: 100%;
-  padding: 6px;
-  margin-bottom: 6px;
-  box-sizing: border-box;
+.input-container {
+  display: flex;
+  background: var(--card-bg);
+  border: 2px solid var(--accent);
+  border-radius: 12px;
+  margin-bottom: 15px;
 }
 
-button {
-  padding: 6px;
-  border-radius: 6px;
-  border: none;
+input { background: transparent; border: none; color: white; padding: 10px; flex: 1; outline: none; }
+#addSite { background: var(--accent); border: none; color: #fff; width: 40px; cursor: pointer; font-weight: bold; font-size: 20px; border-radius: 0 10px 10px 0; }
+
+#popularSites { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 15px; }
+#popularSites button {
+  background: #1e293b;
+  border: 1px solid var(--accent);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 11px;
   cursor: pointer;
 }
 
-#startFocus {
-  background: #2ecc71;
-  color: white;
-  width: 100%;
-  margin-top: 6px;
-}
+.timer-box { text-align: center; margin-bottom: 15px; }
+#timer { font-size: 32px; font-weight: 900; margin: 0; color: #fff; }
+.label { font-size: 10px; color: #94a3b8; margin: 0 0 10px 0; }
 
-#stopFocus {
-  background: #e74c3c;
-  color: white;
-  width: 100%;
-  margin-top: 6px;
-}
+.settings { display: flex; align-items: center; justify-content: center; gap: 8px; margin-bottom: 15px; }
+#timeInput { width: 50px; background: var(--card-bg); border: 1px solid var(--accent); color: #fff; border-radius: 8px; padding: 5px; text-align: center; }
 
-#timer {
-  text-align: center;
-  font-size: 20px;
-  font-weight: bold;
+.actions { display: flex; gap: 10px; }
+.glow-btn { flex: 1; padding: 12px; border-radius: 10px; border: none; font-weight: bold; cursor: pointer; }
+.start { background: var(--accent); color: #fff; }
+.stop { background: rgba(255, 71, 87, 0.1); color: var(--danger); border: 1px solid var(--danger); }
+
+/* LİSTE KAYDIRMA AYARI BURASI */
+.list-container {
   margin-top: 10px;
+  max-height: 150px; /* Liste boyu dolunca scroll burada çıkacak */
+  overflow-y: auto;
+  padding-right: 5px;
 }
 
-#siteList li {
+/* Şık İç Scroll Çubuğu */
+.list-container::-webkit-scrollbar { width: 4px; }
+.list-container::-webkit-scrollbar-track { background: rgba(0,0,0,0.1); }
+.list-container::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 10px; }
+
+.custom-list { list-style: none; padding: 0; margin: 0; }
+li {
   display: flex;
   justify-content: space-between;
-  margin-top: 4px;
+  padding: 10px;
+  background: rgba(0,0,0,0.2);
+  margin-bottom: 6px;
+  border-radius: 10px;
+  border-left: 4px solid var(--accent);
+  font-size: 12px;
 }
 
-#siteList button {
-  background: #ccc;
-}
-#dailyFocus {
-  text-align: center;
-  font-size: 14px;
-  margin-top: 6px;
-  color: #555;
-}
+li button { background: transparent; border: none; color: var(--danger); cursor: pointer; font-weight: bold; }
