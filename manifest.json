@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Focus Mode Blocker",
+  "description": "Blocks distracting websites during focus sessions",
+  "version": "1.0",
+  "permissions": ["storage", "tabs", "notifications", "alarms"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["block.html", "block.js"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+body {
+  width: 300px;
+  font-family: system-ui, sans-serif;
+  padding: 10px;
+  background: #f9f9f9;
+}
+
+h3 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+h4 {
+  margin-top: 15px;
+  margin-bottom: 6px;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 6px;
+  margin-bottom: 6px;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 6px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+#startFocus {
+  background: #2ecc71;
+  color: white;
+  width: 100%;
+  margin-top: 6px;
+}
+
+#stopFocus {
+  background: #e74c3c;
+  color: white;
+  width: 100%;
+  margin-top: 6px;
+}
+
+#timer {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+#siteList li {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4px;
+}
+
+#siteList button {
+  background: #ccc;
+}
+#dailyFocus {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 6px;
+  color: #555;
+}

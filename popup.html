@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <h3>Focus Mode</h3>
+
+  <input id="siteInput" placeholder="example.com" />
+  <button id="addSite">Add Site</button>
+
+  <ul id="siteList"></ul>
+<h4>Popular sites</h4>
+<div id="popularSites" style="display:flex; gap:6px; flex-wrap:wrap;"></div>
+
+  <label>Focus Time (minutes)</label>
+  <input id="timeInput" type="number" value="25" min="1" />
+
+  <button id="startFocus">Start Focus</button>
+<button id="stopFocus">Stop Focus</button>
+
+  <p id="timer">Not started</p>
+<p id="dailyFocus">Today: 0 min</p>
+
+  <script src="popup.js"></script>
+</body>
+</html>
