@@ -28,6 +28,8 @@ Uzantı menüsünden kalan süre anlık olarak takip edilebilir.
 
 Seans Sonu: Süre dolduğunda sistem size bildirim gönderir ve odaklanma modu otomatik olarak sona erer.
 
+ <img width="300" height="606" alt="image" src="https://github.com/user-attachments/assets/25c44e0b-eeab-472c-b08f-cd27a67acc98" />
+
 ## Teknoloji
 - JavaScript
 - Chrome Extension API
