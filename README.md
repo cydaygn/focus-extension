@@ -1,42 +1,44 @@
 # Focus Mode Chrome Extension
 
-Blocks distracting websites during focus sessions.
+Dikkat dağıtan web sitelerini engelleyerek odaklanmanızı ve verimliliğinizi artıran Chrome eklentisi.
 
-## 🚀 Features
+## ✨ Özellikler
 
-- ⏱ Focus timer with live countdown
-- 🚫 Block selected websites during focus mode
-- 🛑 Custom block page instead of redirecting
-- 🔴 “Stop Focus” button to exit anytime
-- 🌐 Popular sites quick-add (YouTube, X, Instagram, etc.)
-- 🧠 Daily focus logic-ready architecture
-- 💾 Persistent state using Chrome Storage API
+- 🎨 **Modern Tasarım:** Koyu tema üzerinde canlı turkuaz (#188d85) detaylarla göz yormayan arayüz.
+- 🕒 **Zamanlayıcı :** Odaklanma sürenizi belirleyin ve geri sayımı takip edin.
+- 🚫 **Hızlı Engelleme:** Tek tıkla popüler sosyal medya sitelerini engellenenler listesine ekleyin.
+- 📊 **Günlük İstatistik:** O gün toplamda kaç dakika odaklandığınızı görün.
+- 🔔 **Bildirimler:** Odaklanma seansı bittiğinde veya yeni site eklendiğinde bildirim alın.
+- 🖱️ **Sağ Tık Menüsü:** Herhangi bir web sitesindeyken sağ tıklayarak saniyeler içinde listeye ekleme yapın.
 
-## 🖥 How It Works
+## 🖥 Nasıl Çalışır?
+Engellenecek Siteleri Seçin: Odaklanma süresince uzak durmak istediğiniz web sitelerini listeye ekleyin.
 
-1. User selects websites to block  
-2. Sets a focus duration (in minutes)  
-3. Starts focus mode  
-4. While focus is active:
-   - Blocked sites are intercepted
-   - A custom block page is shown
-   - Remaining time is displayed
-5. Focus ends automatically or manually
+Süreyi Belirleyin: Kaç dakika odaklanmak istediğinizi girin (varsayılan 25 dk).
 
+Odaklanmayı Başlatın: "Odaklanmayı Başlat" butonuna basarak seansı başlatın.
 
-## Tech
+Odak Modu Aktifken:
+
+Engellenen sitelere girişler otomatik olarak yakalanır.
+
+Kullanıcı, özel olarak tasarlanmış "Engellendi" sayfasına yönlendirilir.
+
+Uzantı menüsünden kalan süre anlık olarak takip edilebilir.
+
+Seans Sonu: Süre dolduğunda sistem size bildirim gönderir ve odaklanma modu otomatik olarak sona erer.
+
+## Teknoloji
 - JavaScript
 - Chrome Extension API
-This project demonstrates:
-- Browser extension architecture
-- State management without frameworks
-- UX-focused decision making
-- Clean separation of background & UI logic
-- Real-world productivity use case
+-  HTML5 & CSS3:
 
-## 🛠 Installation (Developer Mode)
-1. Clone the repository
-2. Open `chrome://extensions`
-3. Enable **Developer mode**
-4. Click **Load unpacked**
-5. Select the project folder
+## 🛠️ Kurulum
+
+Eklentiyi yerel olarak kullanmak için şu adımları izleyin:
+
+1. Bu depoyu indirin veya bilgisayarınıza clone'layın: `git clone https://github.com/cydaygn/focus-extension.git`
+2. Google Chrome'u açın ve adres çubuğuna `chrome://extensions/` yazın.
+3. Sağ üst köşedeki **Geliştirici Modu**'nu (Developer Mode) aktif hale getirin.
+4. **Paketlenmemiş öğe yükle** (Load unpacked) butonuna tıklayın.
+5. Bilgisayarınızdaki `focus-extension` klasörünü seçin.
