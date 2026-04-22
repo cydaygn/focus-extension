@@ -2,16 +2,16 @@
 
 Dikkat dağıtan web sitelerini engelleyerek odaklanmanızı ve verimliliğinizi artıran Chrome eklentisi.
 
-## ✨ Özellikler
+##  Özellikler
 
-- 🎨 **Modern Tasarım:** Koyu tema üzerinde canlı turkuaz (#188d85) detaylarla göz yormayan arayüz.
-- 🕒 **Zamanlayıcı :** Odaklanma sürenizi belirleyin ve geri sayımı takip edin.
-- 🚫 **Hızlı Engelleme:** Tek tıkla popüler sosyal medya sitelerini engellenenler listesine ekleyin.
-- 📊 **Günlük İstatistik:** O gün toplamda kaç dakika odaklandığınızı görün.
-- 🔔 **Bildirimler:** Odaklanma seansı bittiğinde veya yeni site eklendiğinde bildirim alın.
-- 🖱️ **Sağ Tık Menüsü:** Herhangi bir web sitesindeyken sağ tıklayarak saniyeler içinde listeye ekleme yapın.
+- **Modern Tasarım:** Koyu tema üzerinde canlı turkuaz (#188d85) detaylarla göz yormayan arayüz.
+- **Zamanlayıcı :** Odaklanma sürenizi belirleyin ve geri sayımı takip edin.
+- **Hızlı Engelleme:** Tek tıkla popüler sosyal medya sitelerini engellenenler listesine ekleyin.
+- **Günlük İstatistik:** O gün toplamda kaç dakika odaklandığınızı görün.
+- **Bildirimler:** Odaklanma seansı bittiğinde veya yeni site eklendiğinde bildirim alın.
+- **Sağ Tık Menüsü:** Herhangi bir web sitesindeyken sağ tıklayarak saniyeler içinde listeye ekleme yapın.
 
-## 🖥 Nasıl Çalışır?
+## Nasıl Çalışır?
 Engellenecek Siteleri Seçin: Odaklanma süresince uzak durmak istediğiniz web sitelerini listeye ekleyin.
 
 Süreyi Belirleyin: Kaç dakika odaklanmak istediğinizi girin (varsayılan 25 dk).
@@ -35,7 +35,7 @@ Seans Sonu: Süre dolduğunda sistem size bildirim gönderir ve odaklanma modu o
 - Chrome Extension API
 -  HTML5 & CSS3:
 
-## 🛠️ Kurulum
+##  Kurulum
 
 Eklentiyi yerel olarak kullanmak için şu adımları izleyin:
 
